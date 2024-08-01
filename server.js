@@ -4,11 +4,11 @@ const cors = require('cors')
 
 const router = require('./router/auth-router')
 const connectDb = require("./models/db")
-
+require('dotenv').config();
 
 // handle cors policy issue
 const corsOptions = {
-  origin:"http://localhost:5173",
+  origin:process.env.BASE_URL,
   method:"GET, POST,PUT,DELETE,PATCH,HEAD",
   Credential:true,
 }
