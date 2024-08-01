@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 // const URI = "mongodb://127.0.0.1:27017/mern-admin"
-const URI = "mongodb+srv://manish201258:RbUPPnyFo7FO9JaW@moviebookingcluster.r2fmyax.mongodb.net/?retryWrites=true&w=majority&appName=MovieBookingCluster"
+const URI = process.env.BASE_URL;
 
 const connectDb = async()=>{
 try {
