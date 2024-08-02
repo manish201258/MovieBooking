@@ -6,7 +6,11 @@ const connectDb = require("./models/db");
 require('dotenv').config();
 
 // Define allowed origins
-const allowedOrigins = ['https://cinemacove-backend.onrender.com', 'http://localhost:5173'];
+const allowedOrigins = [
+  'https://cinemacove-backend.onrender.com',
+  'http://localhost:5173',
+  'https://cinemacove.netlify.app'
+];
 
 const corsOptions = {
   origin: function (origin, callback) {
