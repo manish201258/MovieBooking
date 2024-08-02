@@ -1,10 +1,10 @@
 const express = require("express")
 const app = express()
 const cors = require('cors')
+require('dotenv').config();
 
 const router = require('./router/auth-router')
 const connectDb = require("./models/db")
-require('dotenv').config();
 
 // handle cors policy issue
 const corsOptions = {
