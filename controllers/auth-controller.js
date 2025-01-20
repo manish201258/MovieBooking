@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");
 // Register Form Logic
 const register = async (req, res) => {
   try {
-    const { username, email, phone, password,status } = req.body;
+    const { username, email, phone, password } = req.body;
 
     const userExist = await User.findOne({ email });
 
